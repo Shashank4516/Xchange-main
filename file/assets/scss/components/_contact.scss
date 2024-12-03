@@ -1,0 +1,144 @@
+@use '../utils' as *;
+
+/*
+ ::::::::::::::::::::::::::
+  CONTACT AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//===  contact page style ===
+
+.contact-page {
+    background-color: #F3F4FF;
+    padding-top: 250px;
+    .contact-page-bg {
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 48px;
+
+        .contact-form {
+            .single-input {
+                input, textarea {
+                    border-radius: 4px;
+                    border: none;
+                    background-color: #F3F4FF;
+                    padding: 18px;
+                    margin-top: 20px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+                    &::placeholder {
+                        color: var(--Home-Page-3-Color-Text-Color, #0708118f);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px; /* 100% */
+                    }
+                }
+                .nice-select.wide {
+                    height: 60px;
+                    margin-top: 20px;
+                    border: none;
+                    line-height: 60px;
+                    color: var(--Home-Page-3-Color-Text-Color, #0708118f);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    background: #F3F4FF;
+                }
+
+                .nice-select:after {
+                    border-bottom: 2px solid #999;
+                    border-right: 2px solid #999;
+                    content: '';
+                    display: block;
+                    height: 8px;
+                    margin-top: -4px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 18px;
+                    top: 50%;
+                    -webkit-transform-origin: 66% 66%;
+                    -ms-transform-origin: 66% 66%;
+                    transform-origin: 66% 66%;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    -webkit-transition: all 0.15s ease-in-out;
+                    transition: all 0.15s ease-in-out;
+                    width: 8px;
+                }
+                
+            }
+
+            .button {
+                text-align: end;
+            }
+        }
+    }
+
+    .contact-boxs {
+        padding-left: 40px;
+
+        @media #{$md} {
+            padding-left: 0;
+        }
+
+        @media #{$xs} {
+            padding-left: 0;
+        }
+
+        .single-box {
+            display: flex;
+            align-items: center;
+            background-color: #F3F4FF;
+            border-radius: 4px;
+            padding: 24px;
+            transition: all .4s;
+            margin-top: 20px;
+
+            .icon {
+                height: 50px;
+                width: 50px;
+                background-color: #e0e3ff;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+            }
+            .heading {
+                padding-left: 16px;
+                h5 {
+                    color: var(--Home-Page-3-Color-Text-Color, #070811);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px; /* 100% */
+                }
+                a {
+                    display: inline-block;
+                    color: var(--Home-Page-3-Color-Paragraph-Color, #50515C);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px; /* 100% */
+                    padding-top: 16px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+//===  contact page style ===
+
+/*
+ ::::::::::::::::::::::::::
+  CONTACT AREA CSS
+ ::::::::::::::::::::::::::
+ */

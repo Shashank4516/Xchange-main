@@ -1,0 +1,59 @@
+$colors: (
+    'text': (
+        'heading-1': #070811,
+        'pera-1': #50515C,
+        'pera-2': #CCCCCE,
+        'white-1': #ffffff,
+    ),
+    'bg': (
+        'main-bg-1': #5A65F5,
+        'main-bg-2':  var(--Home-Page-2-Color-Linner-Color, linear-gradient(91deg, #C0FF3A 17.46%, #00FFA3 93.13%)),
+        'main-bg-3': linear-gradient(90deg, #EE64FE 0%, #7000FD 100%),
+        'main-bg-4': #F69434,
+
+        'common-bg1': #F3F4FF,
+        'common-bg2': #E4E6FE,
+        'common-bg3': #DEE0FD,
+        'common-bg4': #F7F5FB,
+        'bg-white': #ffffff,
+    ),
+    'border': (
+        'border-1': #f0f0f0,
+        'border-2': #dfdcdc,
+        'border-4': #7E7C7F,
+    )
+);
+
+
+// home 2 transparent bg
+//*****
+// border-radius: 4px;
+// background: rgba(255, 255, 255, 0.05);
+// backdrop-filter: blur(47px);
+
+
+// home 3 text color
+//*****
+// h1 {
+//     background: var(--Home-Page-1-Color-Gradient, linear-gradient(90deg, #EE64FE 0%, #7000FD 100%));
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+
+
+
+// home text color
+//*****
+// h1 {
+//     background: linear-gradient(275deg, #09FF9F 20.2%, #C0FF3B 49.23%);
+// background-clip: text;
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// font-family: "Plus Jakarta Sans";
+// font-size: 62px;
+// font-style: normal;
+// font-weight: 800;
+// line-height: 82px;
+// text-transform: uppercase;
+//   }

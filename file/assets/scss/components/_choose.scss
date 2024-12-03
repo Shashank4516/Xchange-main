@@ -1,0 +1,139 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+
+// ==== choose style 4 ====
+
+.chosse4 {
+  .chosse4-all-images {
+    position: relative;
+    height: 600px;
+
+    @media #{$xs} {
+      height: 450px;
+    }
+
+    .image1 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      right: 50px;
+      top: 50px;
+    }
+    .image3 {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .heading4 {
+
+    @media #{$md} {
+     margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 40px;
+     }
+    .counter-area {
+      position: relative;
+      padding: 32px;
+      margin-top: 32px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid var(--Home-Page-4-Color-Normal, #F69434);
+        background: var(--home-page-4-color-light-hover, #FEEFE1);
+        z-index: -1;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid var(--Home-Page-4-Color-Normal, #F69434);
+        z-index: -1;
+      }
+
+      .counter-single {
+        text-align: center;
+
+        @media #{$xs} {
+          margin-bottom: 30px;
+         }
+        p {
+          color: var(--Home-Page-3-Color-Paragraph-Color, #50515C);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px; /* 100% */
+          padding-bottom: 16px;
+
+          img {
+            margin-top: -3px;
+            margin-right: 2px;
+          }
+        }
+
+        h3 {
+          color: var(--Home-Page-3-Color-Text-Color, #070811);
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 100% */
+        }
+
+
+        &.after {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            height: 90px;
+            width: 2px;
+            background-color: #E5D8CC;
+            @media #{$md} {
+              display: none;
+            }
+
+            @media #{$xs} {
+              display: none;
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// ==== choose style 4 ====
+
+/*
+ ::::::::::::::::::::::::::
+  CHOOSE AREA CSS
+ ::::::::::::::::::::::::::
+ */

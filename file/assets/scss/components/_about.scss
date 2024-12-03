@@ -1,0 +1,441 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  ABOUT AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+//===  about sytle 1 ===
+
+.about1 {
+  .about1-images {
+    height: 520px;
+    position: relative;
+
+    @media #{$xs} {
+      height: 720px;
+    }
+
+    .image1 {
+      position: absolute;
+      bottom: 50px;
+      left: 70px;
+      z-index: -2;
+
+      @media #{$xs} {
+        left: 0;
+      }
+    }
+
+    .image2 {
+      position: absolute;
+      bottom: 80px;
+      left: 140px;
+      z-index: -2;
+    }
+
+    .image3 {
+      position: absolute;
+      top: -30px;
+      right: 40px;
+      z-index: 1;
+    }
+
+    .image4 {
+      position: absolute;
+      top: 110px;
+      left: -90px;
+      z-index: 1;
+
+      @media #{$xs} {
+        top: 70px;
+      }
+
+    }
+
+    .image5 {
+      position: absolute;
+      bottom: -60px;
+      right: -40px;
+      z-index: 1;
+
+      @media #{$xs} {
+        right: 0;
+        bottom: 20px;
+      }
+    }
+
+  }
+
+  .heading1 {
+    padding-left: 30px;
+
+    @media #{$md} {
+      padding-top: 40px;
+      padding-left: 0;
+    }
+    @media #{$xs} {
+      padding-top: 40px;
+      padding-left: 0;
+    }
+
+    .icon-box {
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      background: var(--vtc-bg-bg-white);
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
+      padding: 28px 24px;
+      margin-top: 24px;
+      transition: all .4s;
+
+      @media #{$xs} {
+        display: block;
+      }
+
+      .icon {
+        height: 80px;
+        width: 80px;
+        border-radius: 4px;
+        background-color: var(--vtc-bg-common-bg2);
+        text-align: center;
+        line-height: 80px; 
+        transition: all .4s;     
+        img {
+          transition: all .4s;
+        }
+      }
+      .heading1 {
+        padding-left: 20px;
+
+        @media #{$xs} {
+          padding-left: 0;
+          padding-top: 20px;
+        }
+
+        p {
+          padding-top: 12px;
+        }
+      }
+
+      &:hover {
+        transition: all .4s;
+        transform: translateY(-10px);
+
+        .icon {
+          transition: all .4s;
+          background-color: var(--vtc-bg-main-bg-1);
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+//===  about sytle 1 ===
+
+//===  about sytle 2 ===
+
+.about2 {
+  position: relative;
+  .about2-images {
+    position: relative;
+    height: 480px;
+
+    .image1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      left: 150px;
+      top: 30px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur(2px);
+      padding: 16px;
+      right: 30px;
+
+      @media #{$xs} {
+        left: 0;
+      }
+    }
+
+    .image3 {
+      position: absolute;
+      right: 0;
+      top: -30px;
+      width: 130px;
+    }
+  }
+
+  .about2-boxs {
+    padding-left: 70px;
+    position: relative;
+
+    @media #{$xs} {
+      padding-left: 0;
+
+    }
+
+    @media #{$md} {
+      padding-left: 0;
+      padding-top: 60px;
+    }
+
+    .single-box {
+      display: flex;
+      align-items: start;
+      margin-bottom: 60px;
+
+      .icon {
+        background: var(--vtc-bg-main-bg-2);
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+      }
+
+      .heading2 {
+        padding-left: 24px;
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../img/shapes/about2-line.png);
+      @media #{$md} {
+        left: 30px;
+      }
+      @media #{$xs} {
+        left: 30px;
+        top: -32px;
+      }
+    }
+  }
+
+  .sec-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media #{$md} {
+      display: none;
+    }
+
+    @media #{$xs} {
+      display: none;
+    }
+  }
+}
+
+//===  about sytle 2 ===
+
+//===  about sytle 3 ===
+
+.about3 {
+  position: relative;
+  .about3-counter-boxs {
+    position: relative;
+
+    @media #{$md} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 40px;
+    }
+
+    .box {
+      h3 {
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100px; /* 100% */
+      background: var(--Home-Page-1-Color-Gradient, linear-gradient(90deg, #EE64FE 0%, #7000FD 100%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media #{$md} {
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      @media #{$xs} {
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      }
+
+      p {
+        color: var(--vtc-text-pera-2);
+        font-size: var(--f-fs-font-fs18);
+        font-style: normal;
+        font-weight: var(--f-fw-medium);
+        line-height: var(--f-fs-font-fs28); /* 155.556% */
+        padding-top: 16px;
+      }
+
+      &.box-unic {
+        margin-bottom: 60px;
+
+        @media #{$md} {
+          margin-bottom: 30px;
+        }
+
+        @media #{$xs} {
+          margin-bottom: 30px;
+        }
+
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url(../img/shapes/about3-element.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: scale(2);
+      z-index: -2;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media #{$md} {
+      display: none;
+    }
+    @media #{$xs} {
+      display: none;
+    }
+  }
+}
+
+//===  about sytle 3 ===
+
+//===  about page trusted ===
+
+.about-trusted {
+  .about-trusted-boxs {
+    position: relative;
+    padding-right: 80px;
+    .single-box {
+      display: flex;
+      align-items: start;
+      margin-top: 50px;
+      .icon {
+        background-color: var(--vtc-bg-main-bg-1);
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 50%;
+
+        img {
+          transition: all .4s;
+        }
+      }
+
+      .heading1 {
+        padding-left: 16px;
+      }
+
+      &:hover {
+        .icon {
+          img {
+            transition: all .4s;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30px;
+      height: 87%;
+      width: 100%;
+      background-image: url(../img/shapes/about-trusted-box-after.png);
+      background-size: contain;
+      background-position: start;
+      background-repeat: no-repeat;
+      z-index: -3;
+    }
+  }
+
+  .about-trusted-images {
+    position: relative;
+    height: 500px;
+    margin-top: 30px;
+
+    .image1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      right: 0;
+      top: 40px;
+    }
+
+    .image3 {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+
+      @media #{$md} {
+        right: 0;
+        top: 0;
+      }
+
+      @media #{$xs} {
+        right: 0;
+        top: 0;
+      }
+
+    }
+  }
+}
+
+//===  about page trusted ===
+
+   /*
+ ::::::::::::::::::::::::::
+  ABOUT AREA CSS
+ ::::::::::::::::::::::::::
+ */

@@ -1,0 +1,1047 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  WORK AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// ==== work style 1 ===
+
+.work1 {
+  background-color: var(--vtc-bg-common-bg1);
+
+  .work-box-area {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+
+    span {
+      display: inline-block;
+      color: var(--Home-Page-3-Color-Main-Color, #5A65F5);
+      font-size: var(--f-fs-font-fs18);
+      font-style: normal;
+      font-weight: var(--f-fw-bold);
+      line-height: var(--f-fs-font-fs18); /* 100% */
+      text-transform: capitalize;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: var(--vtc-bg-bg-white);
+      border-radius: 50%;
+      transition: all .4s;
+      position: relative;
+      z-index: 99;
+    }
+
+    .work-box {
+      background-color: var(--vtc-bg-bg-white);
+      transition: all .4s;
+      overflow: hidden;
+      border-radius: 4px;
+
+      .image {
+        img {
+          transition: all .4s;
+        }
+      }
+
+      .heading1 {
+        background-color: #DEE0FD;
+        padding: 32px 28px;
+        transition: all .4s;
+      }
+    }
+
+    &:hover {
+      span {
+        transition: all .4s;
+        background-color: var(--vtc-bg-main-bg-1);
+        color: var(--vtc-bg-bg-white);
+      }
+
+      .work-box {
+        transition: all .4s;
+        transform: translateY(-10px);
+
+        .heading1 {
+          transition: all .4s;
+          background-color: var(--vtc-bg-main-bg-1);
+
+          h5 {
+            a {
+              color: var(--vtc-bg-bg-white);
+              transition: all .4s;
+            }
+          }
+          p {
+            transition: all .4s;
+            color: #ffffffd2;
+          }
+        }
+        .image {
+          img {
+            transform: scale(1.1);
+            transition: all .4s;
+          }
+        }
+      }
+    }
+
+
+        &.active {
+          span {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main-bg-1);
+            color: var(--vtc-bg-bg-white);
+          }
+          .heading1 {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main-bg-1);
+
+            h5 {
+              a {
+                color: var(--vtc-bg-bg-white);
+                transition: all .4s;
+              }
+            }
+            p {
+              transition: all .4s;
+              color: #ffffffd2;
+            }
+          }
+        }
+      }
+    }
+
+  .work-top {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #DEE0FD;
+      transform: scaleX(0.7);
+      left: 14px;
+      width: 97%;
+
+      @media #{$md} {
+        display: none;
+      }
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+
+// ==== work style 1 ===
+
+// ==== work style 2 ===
+
+.work2 {
+  position: relative;
+  .work2-box-area {
+    margin-top: 50px;
+    text-align: center;
+    transition: all .4s;
+    .icon-area {
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon {
+      height: 80px;
+      width: 80px;
+      text-align: center;
+      line-height: 80px;
+      background: var(--vtc-bg-main-bg-2);
+      border-radius: 50%;
+      transition: all .4s;
+    }
+
+    .single-box {
+      position: relative;
+      padding: 90px 65px 40px 65px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/bg/work2-box-img.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -2;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/bg/work2-box-img2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: -1;
+        opacity: 0;
+        transition: all .4s;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      transition: all .4s;
+      .icon {
+        transform: rotateY(180deg);
+        transition: all .4s;
+      }
+
+      .single-box {
+        &::before {
+          opacity: 1;
+          transition: all .4s;
+        }
+
+
+        .heading2 {
+          h4 {
+            a {
+              color: var(--vtc-text-heading-1);
+              transition: all .4s;
+            }
+          }
+          p {
+            color: var(--vtc-text-pera-1);
+          }
+        }
+      }
+    }
+
+    &.active {
+      transform: translateY(-10px);
+      transition: all .4s;
+
+      .single-box {
+        &::before {
+          opacity: 1;
+          transition: all .4s;
+        }
+
+
+        .heading2 {
+          h4 {
+            a {
+              color: var(--vtc-text-heading-1);
+              transition: all .4s;
+            }
+          }
+          p {
+            color: var(--vtc-text-pera-1);
+          }
+        }
+      }
+    }
+  }
+
+  .shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -5;
+    @media #{$md} {
+      display: none;
+    }
+
+    @media #{$xs} {
+      display: none;
+    }
+  }
+}
+
+// ==== work style 2 ===
+
+
+// work area starts //
+.work-sectigon-area {
+  position: relative;
+  @media #{$xs} {
+      padding: 50px 0 50px;
+  }
+  @media #{$md} {
+      padding: 50px 0 50px;
+  }
+  .works-header{
+      margin-bottom: 60px;
+      h2{
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 50px;
+          color: blue;
+          position: relative;
+          @media #{$xs} {
+              font-size: 32px;
+              line-height: 42px;
+          }
+          img{
+              position: absolute;
+              top: -10px;
+          }
+      }
+  }
+  .collapse-navtabs {
+      padding: 0 90px 0 0;
+      position: relative;
+      @media #{$xs} {
+          padding: 0;
+      }
+      @media #{$md} {
+          padding: 0;
+      }
+
+        &:after{
+          position: absolute;
+          content: "";
+          height: 95%;
+          width: 12px;
+          background-color: #1F1A25;
+          left: -70px;
+          top: 0;
+          }
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+          border-radius: 4px;
+          background: var(--Home-Page-1-Color-Gredient-1, linear-gradient(90deg, #49D2FD 0%, #8F00FF 100%));
+          .polygon2{
+              display: none;
+              transition: all .4s ease-in-out;
+          } 
+          .polygon1{
+              display: block;
+          }
+      }
+
+      button{
+          position: relative;
+          z-index: 1;
+          background: #1F1A25;
+          padding: 28px 24px;
+          border-radius: 4px;
+          margin-left: 30px; 
+          margin-bottom: 30px; 
+          text-align: start;
+          &::after:active{
+              background: red;
+              @media #{$xs} {
+                  margin-left: 0;
+                }
+                @media #{$md} {
+                  margin-left: 0;
+                }
+       }
+       
+       
+           &:after{
+               position: absolute;
+               content: "";
+               height: 170px;
+               width: 12px;
+               background: linear-gradient(180deg, #49D2FD 0.36%, #8F00FF 100.26%);
+               left: -100px;
+               top: 0;
+               opacity: 0;
+               z-index: 3;
+               }
+
+               &::before{
+                position: absolute;
+                content: "";
+                height: 70px;
+                width: 70px;
+                background-image: url(../img/shapes/work3-box-shape2.png);
+                left: -48px;
+                top: 53px;
+                opacity: 0.8;
+                z-index: 3;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+                    
+          span.heading {
+            color: var(--vtc-bg-bg-white);
+            font-size: var(--f-fs-font-fs24);
+            font-style: normal;
+            font-weight: var(--f-fw-bold);
+            line-height: var(--f-fs-font-fs24); /* 100% */
+            display: inline-block;
+          }
+          span.button-pera{
+            color: rgba(255, 255, 255, 0.80);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 162.5% */
+            letter-spacing: 0.16px;
+            display: inline-block;
+            padding-top: 10px;
+          }
+          .tabs-content{
+              img{
+                  position: absolute;
+                  left: -50px;
+                  top: 25%;
+                  filter: brightness(0) invert(1);
+              }
+          }
+
+          &.active {
+            &::after {
+              opacity: 1;
+            }
+            &::before{
+              position: absolute;
+              content: "";
+              height: 70px;
+              width: 70px;
+              background-image: url(../img/shapes/work3-box-shape.png);
+              left: -48px;
+              top: 53px;
+              opacity: 0.8;
+              z-index: 3;
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+      }
+
+      img{
+          position: absolute;
+          left: -29px;
+          top: 26%;
+          transition: all .4s ease-in-out;
+          .polygon2{
+              transition: all .4s ease-in-out;
+          }
+          .polygon1{
+              display: none;
+          }
+      }
+  }
+  .elementors-shape1{
+    position: absolute;
+    bottom: -50px;
+    left: 230px;
+  }
+  .elementors-shape2{
+    position: absolute;
+    bottom: -20px;
+    left: 360px;
+}
+ 
+  .sec-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+
+}
+.tabs-author-area{
+  margin-top: 0;
+  position: relative;
+  padding: 0 0 0 50px;
+  @media #{$xs} {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 50px;
+  }
+  .tabs-author-images1{
+      position: relative;
+      @media #{$xs} {
+          left: 0;
+          right: 0;
+          margin-top: 20px;
+      }
+      @media #{$md} {
+          left: 0;
+          right:0;
+          margin-top: 20px;
+      }
+      .tabs-img1 {
+        height: 220px;
+        width: 220px;
+        top: 8px;
+        position: relative;
+        left: 10px;
+        border-radius: 50%;
+      }
+     .elementors10{
+      position: absolute;
+      top:-10px;
+      height: 260px;
+      width: 260px;
+      object-fit: contain;
+      left: -10px;
+     }
+     .elementors11 {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      height: 240px;
+      width: 240px;
+  }
+  }
+  .tabs-author-images1.space1{
+      margin-top: 100px;
+  }
+
+
+.tabs-author-images2{
+  position: absolute;
+  top: 60px;
+  right: -80px;
+  @media #{$xs} {
+      position: relative;
+      left: 0;
+  }
+  @media #{$md} {
+      position: absolute;
+      right: 0;
+
+  }
+  img.tabs-img1{
+      width: 450px;
+      height: 450px;
+      object-fit: contain;
+      border-radius: 50%;
+      transform: scale(0.9);
+      @media #{$xs} {
+          width: 200px;
+          height:200px;
+          position: relative;
+          top: 75px;
+          left: 5px;
+      }
+      @media #{$md} {
+          width: 300px;
+          height:300px;
+          position: relative;
+          top: 75px;
+          left: 5px;
+      }
+
+
+  }
+  .elementors12{
+     img{
+      position: absolute;
+      top: 0;
+      -o-object-fit: contain;
+      object-fit: contain;
+      left: 0;
+      transform: scale(1.1);
+      @media #{$md} {
+        top: 73px;
+      }
+      @media #{$xs} {
+          top: 60px;
+          height: 400px;
+          width: 400px;
+          left: -47px;
+      }
+     }
+     }
+     .elementors13{
+      img{
+       position: relative;
+       top:-396px;
+       height: 450px;
+       width: 450px;
+       object-fit: contain;
+       left: -50px;
+      @media #{$xs} {
+          height: 0;
+          width: 200px;
+      }
+      @media #{$md} {
+          height: 0;
+          width: 200px;
+      }
+      }
+
+      }
+
+    }
+    .tabs-content{
+      transition: all .8s ease-in-out;
+
+  }
+
+}
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===== work4 area start===== //
+
+.work-sectigon-area4 {
+  position: relative;
+  @media #{$xs} {
+      padding: 50px 0 50px;
+  }
+  @media #{$md} {
+      padding: 50px 0 50px;
+  }
+  .works-header{
+      margin-bottom: 60px;
+      h2{
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 50px;
+          color: blue;
+          position: relative;
+          @media #{$xs} {
+              font-size: 32px;
+              line-height: 42px;
+          }
+          img{
+              position: absolute;
+              top: -10px;
+          }
+      }
+  }
+  .collapse-navtabs {
+      padding: 0 90px 0 0;
+      position: relative;
+      @media #{$xs} {
+          padding: 0;
+      }
+      @media #{$md} {
+          padding: 0;
+      }
+
+        &:after{
+          position: absolute;
+          content: "";
+          height: 95%;
+          width: 12px;
+          background-color: #F7F5FB;
+          left: -70px;
+          top: 0;
+          }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+          border-radius: 4px;
+          background: var(--Home-Page-1-Color-Gredient-1, linear-gradient(90deg, #49D2FD 0%, #8F00FF 100%));
+          .polygon2{
+              display: none;
+              transition: all .4s ease-in-out;
+          } 
+          .polygon1{
+              display: block;
+          }
+      }
+
+      button{
+          position: relative;
+          z-index: 1;
+          padding: 28px 24px;
+          margin-left: 30px; 
+          margin-bottom: 30px; 
+          text-align: start;
+          &::after:active{
+              background: red;
+              @media #{$xs} {
+                  margin-left: 0;
+                }
+                @media #{$md} {
+                  margin-left: 0;
+                }
+       }
+
+       .button-area {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+          border: 1.4px solid #F69434;
+          background: var(--Home-Page-4-Color-Gray-Color, #F7F5FB);
+          z-index: -2;
+          transition: all .4s;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+          border: 1.4px solid #F69434;
+          background: var(--Home-Page-4-Color-Gray-Color, #F69434);
+          z-index: -2;
+          transition: all .4s;
+        }
+
+       }
+       
+       
+           &:after{
+               position: absolute;
+               content: "";
+               height: 170px;
+               width: 12px;
+               background: #F69434;
+               left: -100px;
+               top: 0;
+               opacity: 0;
+               z-index: 3;
+               }
+
+               &::before{
+                position: absolute;
+                content: "";
+                height: 70px;
+                width: 70px;
+                background-image: url(../img/shapes/sell-betcoin-shape1.png);
+                left: -46px;
+                top: 53px;
+                opacity: 0.8;
+                z-index: 3;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+                    
+          span.heading {
+            color: var(--vtc-text-heading-1);
+            font-size: var(--f-fs-font-fs24);
+            font-style: normal;
+            font-weight: var(--f-fw-bold);
+            line-height: var(--f-fs-font-fs24); /* 100% */
+            display: inline-block;
+          }
+          span.button-pera{
+            color: var(--vtc-text-pera-1);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 162.5% */
+            letter-spacing: 0.16px;
+            display: inline-block;
+            padding-top: 10px;
+          }
+          .tabs-content{
+              img{
+                  position: absolute;
+                  left: -50px;
+                  top: 25%;
+                  filter: brightness(0) invert(1);
+              }
+          }
+
+          &.active {
+            &::after {
+              opacity: 1;
+            }
+            &::before{
+              position: absolute;
+              content: "";
+              height: 70px;
+              width: 70px;
+              background-image: url(../img/shapes/sell-betcoin-shape2.png);
+              left: -48px;
+              top: 53px;
+              opacity: 0.8;
+              z-index: 3;
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+
+            .button-area {
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                border: 1.4px solid #F69434;
+                background: var(--Home-Page-4-Color-Gray-Color, #F69434);
+                z-index: -2;
+                transition: all .4s;
+              }
+      
+              &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                border: 1.4px solid #F69434;
+                background: var(--Home-Page-4-Color-Gray-Color, #F69434);
+                z-index: -2;
+                transition: all .4s;
+              }
+
+              span.heading {
+                color: var(--vtc-bg-bg-white);
+                font-size: var(--f-fs-font-fs24);
+                font-style: normal;
+                font-weight: var(--f-fw-bold);
+                line-height: var(--f-fs-font-fs24); /* 100% */
+                display: inline-block;
+              }
+              span.button-pera{
+                color: rgba(255, 255, 255, 0.80);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                letter-spacing: 0.16px;
+                display: inline-block;
+                padding-top: 10px;
+              }
+      
+             }
+
+          }
+      }
+
+      img{
+          position: absolute;
+          left: -29px;
+          top: 26%;
+          transition: all .4s ease-in-out;
+          .polygon2{
+              transition: all .4s ease-in-out;
+          }
+          .polygon1{
+              display: none;
+          }
+      }
+  }
+  .elementors-shape1{
+    position: absolute;
+    bottom: -50px;
+    left: 230px;
+  }
+  .elementors-shape2{
+    position: absolute;
+    bottom: -20px;
+    left: 360px;
+}
+ 
+  .sec-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+
+
+  .tabs-author-area{
+    .sell-betcoin-images {
+      position: relative;
+
+      .image2 {
+        position: absolute;
+        top: 100px;
+        left: 0;
+      }
+
+      .image3 {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+      }
+
+    }
+  }
+
+}
+
+
+//===== work4 area start===== //
+
+
+// ==== work style 1 ===
+
+.work4 {
+  background-color: var(--vtc-bg-common-bg4);
+  border-top: 1.5px solid var(--Home-Page-4-Color-Stroke-Color, rgba(5, 4, 2, 0.50));
+  border-bottom: 1.5px solid var(--Home-Page-4-Color-Stroke-Color, rgba(5, 4, 2, 0.50));
+
+  .work-box-area {
+    margin-top: 30px;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      color: var(--vtc-bg-main-bg-4);
+      font-size: var(--f-fs-font-fs18);
+      font-style: normal;
+      font-weight: var(--f-fw-bold);
+      line-height: var(--f-fs-font-fs18); /* 100% */
+      text-transform: capitalize;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: var(--vtc-bg-bg-white);
+      border-radius: 50%;
+      transition: all .4s;
+      position: relative;
+      z-index: 99;
+    }
+
+    .work-box {
+      background-color: var(--vtc-bg-bg-white);
+      transition: all .4s;
+      overflow: hidden;
+      border: 1px solid var(--Home-Page-4-Color-Normal, #F69434);
+      background: var(--home-page-4-color-light-hover, #fff);
+      border-bottom: none;
+      border-radius: 4px;
+
+      .image {
+        img {
+          transition: all .4s;
+        }
+      }
+
+      .heading1 {
+        border-radius: 4px 4px 0px 0px;
+        border-bottom: 1px solid var(--Home-Page-4-Color-Normal, #F69434);
+        background: var(--home-page-4-color-light-hover, #FEEFE1);
+        padding: 32px 28px;
+        transition: all .4s;
+      }
+    }
+
+    &:hover {
+      span {
+        transition: all .4s;
+        background-color: var(--vtc-bg-main-bg-4);
+        color: var(--vtc-bg-bg-white);
+      }
+
+      .work-box {
+        transition: all .4s;
+        transform: translateY(-10px);
+
+        .heading1 {
+          transition: all .4s;
+          background-color: var(--vtc-bg-main-bg-4);
+
+          h5 {
+            a {
+              color: var(--vtc-bg-bg-white);
+              transition: all .4s;
+            }
+          }
+          p {
+            transition: all .4s;
+            color: #ffffffd2;
+          }
+        }
+        .image {
+          img {
+            transform: scale(1.1);
+            transition: all .4s;
+          }
+        }
+      }
+    }
+
+
+        &.active {
+          span {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main-bg-4);
+            color: var(--vtc-bg-bg-white);
+          }
+          .heading1 {
+            transition: all .4s;
+            background-color: var(--vtc-bg-main-bg-4);
+
+            h5 {
+              a {
+                color: var(--vtc-bg-bg-white);
+                transition: all .4s;
+              }
+            }
+            p {
+              transition: all .4s;
+              color: #ffffffd2;
+            }
+          }
+        }
+      }
+    }
+
+  .work-top {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #DFDDE4;
+      transform: scaleX(0.7);
+      left: 14px;
+      width: 97%;
+
+      @media #{$md} {
+        display: none;
+      }
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+
+// ==== work style 1 ===
+
+   /*
+ ::::::::::::::::::::::::::
+  WORK AREA CSS
+ ::::::::::::::::::::::::::
+ */

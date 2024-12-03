@@ -1,0 +1,339 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  CTA AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+// === cta style 1 ===
+
+.cta1 {
+  min-height: 560px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+
+  .heading1-w {
+    padding-top: 100px;
+    padding-right: 60px;
+
+    @media #{$xs} {
+      padding-top: 50px;
+  }
+  }
+
+  .cta1-all-imags {
+    position: relative;
+    text-align: right;
+    min-height: 560px;
+    @media #{$xs} {
+      position: relative;
+      text-align: right;
+      min-height: 420px;
+    }
+
+    .image1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      z-index: 9;
+    }
+
+    .coin-img {
+      position: absolute;
+      top: 0;
+      left: -190px;
+    }
+  }
+}
+
+// === cta style 1 ===
+
+// === cta style 2 ===
+
+.cta2 {
+  background: var(--vtc-bg-main-bg-2);
+  height: 700px;
+  padding-top: 100px;
+  position: relative;
+
+  @media #{$md} {
+    padding-top: 50px;
+  }
+  @media #{$xs} {
+    padding-top: 50px;
+  }
+
+  .heading {
+    span.span {
+      color: var(--Home-Page-2-Color-Dark-Color, #02020A);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 100% */
+      text-transform: uppercase;
+      display: inline-block;
+      border-radius: 4px;
+      background: rgba(2, 2, 10, 0.10);
+      padding: 10px 16px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      color: var(--Home-Page-2-Color-Dark-Color, #02020A);
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px; /* 114.286% */
+
+      @media #{$md} {
+        font-size: var(--f-fs-font-fs32);
+        line-height: var(--f-fs-font-fs32);
+      }
+
+      @media #{$xs} {
+        font-size: var(--f-fs-font-fs32);
+        line-height: var(--f-fs-font-fs32);
+      }
+    }
+  }
+  .buttons {
+    a {
+      &:nth-last-child(1) {
+        margin-left: 16px;
+
+        @media #{$xs} {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .circle1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.1;
+  }
+
+  .circle2 {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    opacity: 0.1;
+  }
+
+}
+
+.cta2-images {
+  .images-area {
+    margin-top: -250px;
+    z-index: 2;
+    position: relative;
+
+    @media #{$md} {
+      margin-top: -340px;
+    }
+
+    @media #{$xs} {
+      margin-top: -180px;
+    }
+
+
+    .image2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 130px;
+      margin-top: -50px;
+      margin-right: -50px;
+
+      @media #{$xs} {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 130px;
+        margin-top: -141px;
+        margin-right: 0;
+      }
+    }
+
+    .image3 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130px;
+      margin-top: -70px;
+      margin-left: -70px;
+    }
+
+  }
+}
+
+// === cta style 2 ===
+
+// === cta style 3 ===
+
+.cta3 {
+  .bg {
+    position: relative;
+    padding: 90px 50px;
+    border-radius: 4px;
+    background: var(--Home-Page-1-Color-Gredient-1, linear-gradient(90deg, #49D2FD 0%, #8F00FF 100%));
+
+    @media #{$md} {
+      padding: 50px 20px;
+    }
+
+    @media #{$xs} {
+      padding: 50px 20px;
+    }
+
+    .form-area {
+      position: relative;
+      margin-left: 100px;
+
+      @media #{$md} {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+
+      @media #{$xs} {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+      input {
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(32px);
+        border: none;
+        padding: 20px;
+        width: 100%;
+        color: #fff;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #ffffffe3;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px; /* 100% */
+        }
+      }
+      .button-area {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        button {
+          border: none;
+        }
+      }
+    }
+
+    .shape {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @media #{$md} {
+        display: none;
+      }
+
+      @media #{$xs} {
+        display: none;
+      }
+    }
+  }
+}
+
+// === cta style 3 ===
+
+// === cta style 4 ===
+
+.cta4 {
+  min-height: 560px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: var(--vtc-bg-main-bg-4);
+  
+
+  .heading1-w {
+    padding-top: 100px;
+
+    @media #{$xs} {
+      padding-top: 50px;
+  }
+  }
+
+  .cta1-all-imags {
+    position: relative;
+    text-align: right;
+    min-height: 560px;
+    @media #{$xs} {
+      position: relative;
+      text-align: right;
+      min-height: 420px;
+    }
+
+    .image1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      z-index: 9;
+    }
+
+    .coin-img {
+      position: absolute;
+      top: 0;
+      left: -190px;
+    }
+  }
+
+  .sec-shape1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    opacity: 0.3;
+
+
+  }
+
+  .sec-shape2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    opacity: 0.3;
+  }
+
+}
+
+// === cta style 4 ===
+
+   /*
+ ::::::::::::::::::::::::::
+  CTA AREA CSS
+ ::::::::::::::::::::::::::
+ */

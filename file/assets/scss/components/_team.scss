@@ -1,0 +1,267 @@
+@use '../utils' as *;
+
+  /*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */
+
+
+//====  about team start ====
+
+.about-team {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--vtc-bg-common-bg1);
+    z-index: -6;
+  }
+
+  .team-box {
+    position: relative;
+    padding: 32px;
+    text-align: center;
+    margin-top: 36px;
+    transition: all .4s;
+
+    .image {
+      margin-bottom: 30px;
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .heading1 {
+      p {
+        padding-top: 9px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--vtc-bg-bg-white);
+      z-index: -5;
+      border-radius: 4px;
+    }
+
+    .box-shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -4;
+      opacity: 0.3;
+      transition: all .4s;
+    }
+
+    .icons {
+      margin-top: 20px;
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          position: relative;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #070811;
+          margin: 0px 1px;
+          transition: all .4s;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(../img/shapes/about-team-icon1.png);
+            z-index: -2;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(../img/shapes/about-team-icon2.png);
+            z-index: -1;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: all .4s;
+          }
+
+          &.active {
+            transition: all .4s;
+            color: #fff;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              background-image: url(../img/shapes/about-team-icon2.png);
+              z-index: -1;
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              opacity: 1;
+              transition: all .4s;
+            }
+          }
+          
+          
+          &:hover {
+            transition: all .4s;
+            color: #fff;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              background-image: url(../img/shapes/about-team-icon2.png);
+              z-index: -1;
+              background-position: center center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              opacity: 1;
+              transition: all .4s;
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          transform: translateX(90px);
+          z-index: -2;
+          transition: all .4s;
+        }
+        &:nth-child(2) {
+          transform: translateX(46px);
+          z-index: -2;
+          transition: all .4s;
+        }
+
+        &:nth-child(3) {
+          z-index: 4;
+          position: relative;
+          transition: all .4s;
+        }
+
+        &:nth-child(4) {
+          transform: translateX(-46px);
+          z-index: -2;
+          transition: all .4s;
+        }
+        &:nth-child(5) {
+          transform: translateX(-90px);
+          z-index: -2;
+          transition: all .4s;
+        }
+
+      }
+    }
+
+    &:hover {
+      transition: all .4s;
+      transform: translateY(-10px);
+
+      .box-shape {
+        opacity: 1;
+        transition: all .4s;
+      }
+
+      .icons {
+        li {
+
+          &:nth-child(1) {
+            transform: translateX(0);
+            z-index: -2;
+            transition: all .4s;
+          }
+          &:nth-child(2) {
+            transform: translateX(0);
+            z-index: -2;
+            transition: all .4s;
+          }
+  
+          &:nth-child(3) {
+            z-index: 4;
+            position: relative;
+            transition: all .4s;
+          }
+  
+          &:nth-child(4) {
+            transform: translateX(0);
+            z-index: -2;
+            transition: all .4s;
+          }
+          &:nth-child(5) {
+            transform: translateX(0);
+            z-index: -2;
+            transition: all .4s;
+          }
+
+        }
+      }
+    }
+  }
+
+  .box-shape1 {
+    position: absolute;
+    bottom: -70px;
+    right: 50%;
+  }
+
+  .box-shape2 {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+  }
+
+  .box-shape3 {
+    position: absolute;
+    right: -50px;
+    bottom: 30px;
+  }
+
+  .shape1 {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+  }
+
+  .shape2 {
+    top: 150px;
+    right: 50px;
+    position: absolute;
+  }
+}
+
+//====  about team end ====
+
+   /*
+ ::::::::::::::::::::::::::
+  TEAM AREA CSS
+ ::::::::::::::::::::::::::
+ */
